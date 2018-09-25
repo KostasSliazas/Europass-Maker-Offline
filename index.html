@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV Europass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Archivo&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khand&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch&amp;subset=latin-ext" rel="stylesheet">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <style>
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}.table footer,article,aside,details,div,figcaption,figure,form,header,hgroup,img,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body,html{line-height:24px}
+
+        body {
+            color: #555;
+            font: 1em/1.5 'Archivo', Arial, Geneva, Tahoma, sans-serif;
+            background: #F7F7F7;
+        }
+
+        h2.left {
+            font-family: 'Khand', Verdana, sans-serif;
+        }
+
+        h1:first-child,
+        h2:first-child,
+        h3:first-child,
+        h4:first-child,
+        h5:first-child,
+        h6:first-child {
+            margin-bottom: 0
+        }
+
+        #vardas,
+        .kCell h2 {
+            text-transform: capitalize
+        }
+
+        #email {
+            text-transform: lowercase;
+        }
+
+        img {
+            height: 116px;
+            width: 116px;
+            background: #fff;
+            padding: 2px;
+            -moz-box-shadow: 0 0 6px #777;
+            -webkit-box-shadow: 0 0 6px #777;
+            box-shadow: 0 0 6px #777;
+            z-index: 1;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 1;
+            margin-top: 1em
+        }
+
+        h2,
+        h3 {
+            font-size: 1em;
+        }
+
+        p,
+        ul,
+        blockquote,
+        pre,
+        td,
+        th,
+        label {
+            font-size: 1em;
+            line-height: 1.5
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .num {
+            font-weight: 900;
+            letter-spacing: .125em;
+            font-family: Arial, serif;
+        }
+
+        .tr {
+            text-align: right
+        }
+
+        .title {
+            font-family: 'Khand', Verdana, sans-serif;
+            letter-spacing: .125em;
+            font-weight: 900;
+            direction: rtl
+        }
+
+        .progress {
+            width: auto;
+            display: block;
+            position: relative;
+            padding: 2px 4px 2px 2px;
+            margin: 0;
+            color: #111
+        }
+
+        .percent {
+            position: absolute;
+            display: block;
+            overflow: hidden;
+        }
+
+        .percent,
+        .kCell {
+            text-indent: 4px;
+        }
+
+        .langue {
+            margin: 0 24px;
+        }
+
+        .bar {
+            height: 18px;
+            line-height: 18px;
+            display: block;
+            border: 1px solid #aaa
+        }
+
+        .c00 {
+            width: 0
+        }
+
+        .c10 {
+            width: 10%
+        }
+
+        .c20 {
+            width: 20%
+        }
+
+        .c30 {
+            width: 30%
+        }
+
+        .c40 {
+            width: 40%
+        }
+
+        .c50 {
+            width: 50%
+        }
+
+        .c60 {
+            width: 60%
+        }
+
+        .c70 {
+            width: 70%
+        }
+
+        .c80 {
+            width: 80%
+        }
+
+        .c90 {
+            width: 90%
+        }
+
+        .c100 {
+            width: 100%
+        }
+
+        .progress .bar {
+            background: rgba(144, 173, 184, 1);
+            background: -moz-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(144, 173, 184, 1)), color-stop(100%, rgba(183, 222, 237, 1)));
+            background: -webkit-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
+            background: -o-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
+            background: -ms-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
+            background: linear-gradient(to right, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%)
+        }
+
+        #photo {
+            padding: 24px;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #cv input {
+            line-height: 24px;
+            height: 24px;
+            border: 0;
+            padding: 0;
+            -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #main,
+        #header,
+        #cv,
+        section,
+        .left,
+        .righ {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #main,
+        #header,
+        section {
+            width: 960px;
+            min-height: 24px;
+        }
+
+        #header,
+        #he {
+            height: 168px;
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+            width: 324px;
+            text-align: right;
+            padding: 0 24px;
+        }
+
+        .righ {
+            float: left;
+            width: 564px;
+        }
+
+        #header .title {
+            font-family: 'Sarpanch', Arial, sans-serif;
+            font-weight: 900;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
+            text-shadow: -1px -1px 0px #f7f7f7, -2px -2px 2px #eee, 1px 1px 0px #f7f7f7, 2px 2px 2px #aaaaaa;
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7);
+            letter-spacing: 2px;
+            padding: 24px 0;
+            color: #777;
+            position: relative;
+        }
+
+        .blokas:last-child {
+            margin-bottom: 48px;
+        }
+
+        .blokas {
+            background: #F7F7F7;
+            display: block;
+            position: relative;
+        }
+
+        .blokas {
+            -webkit-box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
+            -moz-box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
+            box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
+        }
+
+        #main {
+            -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+        }
+
+        #header {
+            background: #fafafa;
+            border-bottom: 1px solid #bbb;
+        }
+
+        .prof:last-child,
+        .darb:last-child {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .prof,
+        .darb {
+            -webkit-box-shadow: 0px -1px 0px 0px #ccc inset;
+            -moz-box-shadow: 0px -1px 0px 0px #ccc inset;
+            box-shadow: 0px -1px 0px 0px #ccc inset;
+        }
+
+        a {
+            color: #000;
+            font-weight: 900;
+        }
+
+        a:focus {
+            outline: 0;
+            background: #ced
+        }
+
+        a:link,
+        a:visited,
+        a:focus,
+        a:active {
+            color: #222;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer
+        }
+
+        .ktable h3 {
+            text-align: right;
+        }
+
+        .ktable {
+            width: 936px;
+            padding: 0;
+            float: left;
+            font-family: 'Khand', Verdana, sans-serif;
+            margin: -1px 0 0;
+            padding: 0 0 1px 0;
+        }
+
+        .kCell,
+        .kCelli {
+            box-sizing: border-box;
+            float: left;
+            height: 24px;
+            overflow: hidden;
+            line-height: 24px
+        }
+
+        .kCell {
+            text-align: left;
+            -webkit-box-shadow: inset -1px 1px 0px 0px #ccc;
+            -moz-box-shadow: inset -1px 1px 0px 0px #ccc;
+            box-shadow: inset -1px 1px 0px 0px #ccc;
+        }
+
+        .kCelli {
+            width: 372px;
+            -webkit-box-shadow: -1px 0px 0px 0px #ccc inset;
+            -moz-box-shadow: -1px 0px 0px 0px #ccc inset;
+            box-shadow: -1px 0px 0px 0px #ccc inset;
+        }
+
+        .lent {
+            width: 112px
+        }
+
+        .titlelentbig {
+            width: 224px
+        }
+
+        .titlelent {
+            height: 48px
+        }
+
+        .hauto {
+            text-align: center
+        }
+
+        section:after {
+            content: " ";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            width: 0;
+            clear: both;
+            font-size: 0;
+            overflow: hidden
+        }
+
+        .bg {
+            background-image: repeating-linear-gradient(45deg, rgba(200, 200, 200, 0.1) 100px, rgba(200, 200, 200, 0.3) 101px, rgba(200, 200, 200, 0.5) 200px, rgba(200, 200, 200, 0.2) 201px), repeating-linear-gradient(135deg, rgba(200, 200, 200, 0.2) 200px, rgba(200, 200, 200, 0.5) 201px, rgba(200, 200, 200, 0.2) 300px, rgba(200, 200, 200, 0.1) 301px), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEUAAAAAAAAICAgQEBAZGRkhISEpKSkxMTFCQkJKSkpSUlJaWlpjY2Nra2tzc3N7e3uEhISMjIyUlJScnJylpaWtra21tbW9vb3FxcXe3t7m5ubv7+////+kcD+qAAAAHXRSTlMAHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHzgkAGUAAABjSURBVBgZncEBAkJAEADAoRxyOORK9f939oedMXGS2Zk4KfxEvLiYGWgZKVQRlUxDR0fixiXizkZmoKEh0Yjo2fiy0zPQUkSsHMwcJCqJTUTHSqLw4cHIIuLNyM6TTGXhEPAHKRgDTFwqlV8AAAAASUVORK5CYII=');
+        }
+
+        @media only screen and (max-width : 960px) {
+            .langue {
+                margin: 0;
+            }
+
+            .left,
+            .righ {
+                clear: both;
+                position: relative;
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                height: auto !important;
+                overflow: hidden;
+                text-align: left;
+            }
+
+            section {
+                width: auto;
+            }
+
+            #main {
+                position: relative;
+                width: auto;
+                margin: 0 auto;
+                display: block;
+                border-radius: 0px 0px 0px 0px !important;
+                -moz-border-radius: 0px 0px 0px 0px !important;
+                -webkit-border-radius: 0px 0px 0px 0px !important;
+            }
+
+            #cv {
+                padding: 6px;
+            }
+
+            #header {
+                display: block;
+                min-height: 168px;
+                height: auto;
+                width: auto;
+                padding: 0;
+            }
+
+            #header .title {
+                padding: 0;
+            }
+
+            .kBody,
+            .kRow,
+            .kCell {
+                width: 100%;
+                margin: 0;
+            }
+
+            .ktable {
+                width: 100%;
+            }
+
+            .ktable h3 {
+                direction: ltr;
+                text-align: left;
+                text-indent: 0;
+            }
+
+            .kal {
+                width: 15%;
+            }
+
+            .kCell {
+                width: 17%;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                hyphens: auto;
+            }
+
+            .titlelentbig {
+                width: 34%;
+            }
+
+            .titlelent {
+                font-size: 0.6250em;
+                line-height: 2.4;
+            }
+
+            #photo,
+            #preview,
+            img {
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+            }
+
+            h1,
+            h2,
+            span.cen {
+                text-align: center;
+            }
+
+            section h2 {
+                display: none;
+            }
+
+            .hi {
+                display: none;
+            }
+
+            .num {
+                text-align: center;
+            }
+
+            #flag {
+                -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+                position: absolute;
+                display: block;
+                right: 0;
+                top: 0;
+                width: 0;
+                height: 0;
+                border-top: 24px solid #aaa;
+                border-left: 24px solid transparent;
+                background: #fff;
+            }
+        }
+
+        @media print {
+
+            html,
+            body,
+            #header,
+            .blokas {
+                min-width: 100%;
+                max-width: 100%;
+                background-color: transparent;
+                background-image: none !important;
+                background: none !important;
+                border: none !important;
+            }
+
+            #header {
+                min-height: 144px;
+                height: auto;
+            }
+
+            #main,
+            #cv,
+            #photo {
+                border: 0;
+            }
+
+            .kCell {
+                border: 1px solid #eee;
+                box-sizing: border-box;
+            }
+
+            #main,
+            #cv,
+            html,
+            body,
+            .righ,
+            .left,
+            #header,
+            img {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                height: auto;
+            }
+
+            .left {
+                width: 23%;
+            }
+
+            .righ {
+                width: 75%;
+                margin-left: 2%;
+            }
+
+            .blokas,
+            .kCelli {
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                font-size: 10pt;
+            }
+
+            .ktable,
+            .kBody,
+            .kRow,
+            .kCell {
+                display: block;
+                width: 100%;
+            }
+
+            .kCell {
+                width: 15%;
+            }
+
+            .kCelli {
+                width: 25%;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                hyphens: auto;
+            }
+
+            .titlelentbig {
+                width: 30%;
+            }
+
+            #main:before {
+                font-size: 24pt;
+            }
+        }
+
+        ::-moz-selection {
+            color: #eee;
+            background: #090;
+        }
+
+        ::selection {
+            color: #eee;
+            background: #090;
+        }
+    </style>
+    <!--[if lt IE 9]>
+<script type="text/javascript">
+document.createElement('section');
+</script>
+<![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body class="bg">
+    <div id="main">
+        <div id="flag"></div>
+        <div id="header">
+            <div id="he" class="left">
+                <h1 class="title">Europass gyvenimo <br>aprašymas</h1>
+            </div>
+            <h1 class="remove"><span style="display:none;">Online</span>Offline CV Europass maker</h1>
+            <div id="photo"><img src="person.png" id="preview" alt="" /> </div>
+        </div>
+        <div id="cv">
+            <div class="blokas">
+                <section>
+                    <h2 class="left num hm">Asmeninė informacija</h2>
+                </section>
+                <section>
+                    <h2 class="left hi">Vardas / Pavardė</h2>
+                    <h3 id="vardas" class="righ num">Europass Maker</h3>
+                </section>
+                <section>
+                    <h2 class="left hi">Telefonas(-ai)</h2>
+                    <h3 class="righ num" id="number">+37068000000</h3>
+                </section>
+                <section>
+                    <h2 class="left hi">El. paštas(-ai)</h2>
+                    <h3 id="email" class="righ num"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
+                </section>
+                <section>
+                    <h2 class="left">Adresas(-ai)</h2>
+                    <h3 class="righ">Adresas Adresas, Adresas Adresas (Adresas)</h3>
+                </section>
+                <section>
+                    <h2 class="left">Pilietybė</h2>
+                    <h3 class="righ">Pilietybė</h3>
+                </section>
+                <section>
+                    <h2 class="left">Gimimo data</h2>
+                    <h3 class="righ">Metai mėnuo diena</h3>
+                </section>
+                <section>
+                    <h2 class="left">Lytis</h2>
+                    <h3 class="righ">Lytis</h3>
+                </section>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left">Pageidaujamas darbas ar profesinės veiklos sritis</h2>
+                    <h3 class="righ num">IT, telekomunikacija, programavimas, kita</h3>
+                </section>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left num hm">Darbo patirtis</h2>
+                </section>
+                <div id="darb" class="darb">
+                    <section>
+                        <h2 class="left">Datos</h2>
+                        <h3 class="righ">Data - Data</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Profesija arba pareigos</h2>
+                        <h3 class="righ">CV šablonų kūrimas</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Pagrindinės veiklos ir atsakomybės</h2>
+                        <h3 class="righ">CV šablonų kūrimas</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Darbovietės pavadinimas ir adresas</h2>
+                        <h3 class="righ">CV maker, Europa, Lietuva</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Darbovietės veiklos sritis arba ūkio šaka</h2>
+                        <h3 class="righ">Darbovietės veiklos sritis arba ūkio šaka</h3>
+                    </section>
+                </div>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left num hm">Išsilavinimas</h2>
+                </section>
+                <div id="prof" class="prof">
+                    <section>
+                        <h2 class="left">Datos</h2>
+                        <h3 class="righ">Data - Data</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Kvalifikacija</h2>
+                        <h3 class="righ">Kvalifikacija</h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Pagrindiniai dalykai/ profesiniai gebėjimai</h2>
+                        <h3 class="righ">Bendrieji dalykai
+                            - Informatika, užsienio kalba(anglų)
+                            Profesiniai dalykai
+                            - Kompiuterių įrangos derinimas, priežiūra, aptarnavimas.
+                        </h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Švietimo teikėjo pavadinimas ir tipas</h2>
+                        <h3 class="righ">Mokykla
+                            Adresas Adresas, Adresas (Šalis)
+                        </h3>
+                    </section>
+                    <section>
+                        <h2 class="left">Kvalifikacijos lygmuo pagal nacionalinę arba tarptautinę klasifikaciją</h2>
+                        <h3 class="righ">ISCED7</h3>
+                    </section>
+                </div>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left">Asmeniniai gebėjimai ir kompetencijos </h2>
+                </section>
+                <section>
+                    <h2 class="left">Gimtoji kalba(-os)</h2>
+                    <h3 class="righ">Lietuvių</h3>
+                </section>
+                <section>
+                    <h2 class="left">Kita kalba (-os) </h2>
+                    <h3 class="righ brd">Kalba, language</h3>
+                </section>
+            </div>
+            <div class="blokas toka">
+                <section>
+                    <div class="table">
+                        <div class="ktable">
+                            <div class="kBody kalbos">
+                                <div class="kRow">
+                                    <div class="kCelli hauto kal"></div>
+                                    <div class="kCell titlelentbig hauto">
+                                        <h2>supratimas</h2>
+                                    </div>
+                                    <div class="kCell titlelentbig hauto">
+                                        <h2>kalbėjimas</h2>
+                                    </div>
+                                    <div class="kCell lent hauto">
+                                        <h2>rašymas</h2>
+                                    </div>
+                                </div>
+                                <div class="kRow">
+                                    <div class="kCelli titlelent hauto kal"></div>
+                                    <div class="kCell lent titlelent hauto">Klausymas</div>
+                                    <div class="kCell lent titlelent hauto">Skaitymas</div>
+                                    <div class="kCell lent titlelent hauto">Bendravimas žodžiu</div>
+                                    <div class="kCell lent titlelent hauto">Informacijos pateikimas žodžiu</div>
+                                    <div class="kCell lent titlelent hauto"></div>
+                                </div>
+                                <div class="kRow">
+                                    <div class="kCelli kal">
+                                        <h3 class="langue">Kalba</h3>
+                                    </div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                </div>
+                                <div class="kRow">
+                                    <div class="kCelli kal">
+                                        <h3 class="langue">Kita kalba</h3>
+                                    </div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                    <div class="kCell edit lent">Double Click</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left">Socialiniai gebėjimai ir kompetencijos</h2>
+                    <h3 class="righ">Geri bendravimo gebėjimai
+                        Gebėjimai dirbti komandoje ir savarankiškai</h3>
+                </section>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left">Techniniai gebėjimai ir kompetencijos</h2>
+                    <h3 class="righ">CV temlate making</h3>
+                </section>
+            </div>
+            <div class="blokas">
+                <section>
+                    <h2 class="left num">Darbo kompiuteriu gebėjimai ir kompetencijos</h2>
+                    <h3 class="righ sss">Operacinės sistemos: Unix/Linux, Windows, Mac OS, Android.
+                        Programinės įrangos paketai: Inkscape (vektorinė grafika), Gimp(rasterinė grafika), Blender(3D grafika),
+                        Photoshop(pagrindai), MS Office programos(Word, Exel, PowerPoint) ir kt.</h3>
+                </section>
+            </div>
+            <div class="blokas topr">
+                <section>
+                    <div class="ktable">
+                        <div class="kBody pkalbos">
+                            <div class="kRow">
+                                <div class="kCelli kal">
+                                    <h3 class="langue">Programavimo kalbos</h3>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">C++</h3>
+                                        <div class="bar c90"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">Java Script</h3>
+                                        <div class="bar c80"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">html</h3>
+                                        <div class="bar c70"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">css</h3>
+                                        <div class="bar c90"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">php</h3>
+                                        <div class="bar c70"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kRow">
+                                <div class="kCelli kal">
+                                    <h3 class="langue">Naudojamos programos</h3>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">Vivaldi</h3>
+                                        <div class="bar c80"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">Firefox</h3>
+                                        <div class="bar c100"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">Opera</h3>
+                                        <div class="bar c70"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">Chromium</h3>
+                                        <div class="bar c90"></div>
+                                    </div>
+                                </div>
+                                <div class="kCell lent">
+                                    <div class="progress">
+                                        <h3 class="percent">IE</h3>
+                                        <div class="bar c50"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="re.js"></script>
+</body>
+
+</html>
