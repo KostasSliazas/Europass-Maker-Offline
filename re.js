@@ -112,7 +112,7 @@ $(function() {
                 return $("<h3 />")
                     .attr({
                         class: this.className,
-                        id: id
+                        id: this.id
                     })
                     .text($(this).val());
             }
@@ -137,7 +137,7 @@ $(function() {
             .clone()
             .attr({
                 class: "darb",
-                id: "darb" + ++kiekid
+                id: "darb" + (++kiekid)
             })
             .insertAfter("#darb");
         refresh();
@@ -148,7 +148,7 @@ $(function() {
             .clone()
             .attr({
                 class: "prof",
-                id: "prof" + ++kiekid
+                id: "prof" + (++kiekid)
             })
             .insertAfter("#prof");
         refresh();
@@ -232,7 +232,7 @@ $(function() {
         var ek = $(this).attr("class");
         ef = ek.split(/[, ]+/).pop();
         $("." + ef + "").empty();
-        if ($("." + ef + "#lygis").length == !1) {
+        if ($("." + ef + "#lygis").length === 0) {
             $("." + ef + "").append(lygiai);
             $("." + ef + "")
                 .children()
@@ -444,6 +444,6 @@ function htmls() {
         .remove();
     var html = $("html").clone();
     var htmlString = html.html();
-    htmlString = '<!DOCTYPE html>\n<html lang="lt">\n' + htmlString.replace(/(\r\n|\n|\r)/gm, " ") + "</html>";
+    htmlString = '<!DOCTYPE html>\n<html lang="lt">\n' + htmlString/* .replace(/(\r\n|\n|\r)/gm, " ") */ + "</html>";
     download(ceds, htmlString);
 }

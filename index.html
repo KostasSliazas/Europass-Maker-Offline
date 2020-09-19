@@ -8,36 +8,28 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Khand&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sarpanch&amp;subset=latin-ext" rel="stylesheet">
-    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII="
+        rel="icon" type="image/x-icon" />
     <style>
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}.table footer,article,aside,details,div,figcaption,figure,form,header,hgroup,img,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body,html{line-height:24px}
-
         body {
-            color: #555;
+            margin: 0;
             font: 1em/1.5 'Archivo', Arial, Geneva, Tahoma, sans-serif;
-            background: #F7F7F7;
+            background: #f7f7f7;
+            color: #767;
         }
 
         h2.left {
-            font-family: 'Khand', Verdana, sans-serif;
-        }
-
-        h1:first-child,
-        h2:first-child,
-        h3:first-child,
-        h4:first-child,
-        h5:first-child,
-        h6:first-child {
-            margin-bottom: 0
+            font-family: 'Khand', Verdana, sans-serif
         }
 
         #vardas,
         .kCell h2 {
-            text-transform: capitalize
+            text-transform: capitalize;
         }
 
         #email {
-            text-transform: lowercase;
+            text-transform: lowercase
         }
 
         img {
@@ -53,27 +45,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             -moz-border-radius: 3px;
             -ms-border-radius: 3px;
             -o-border-radius: 3px;
-            -webkit-border-radius: 3px;
+            -webkit-border-radius: 3px
         }
 
         h1 {
             font-size: 1.5em;
             line-height: 1;
-            margin-top: 1em
+            margin: 1em 0 0
         }
 
         h2,
         h3 {
-            font-size: 1em;
+            font-size: 1em
         }
 
-        p,
-        ul,
         blockquote,
+        label,
+        p,
         pre,
         td,
         th,
-        label {
+        ul {
             font-size: 1em;
             line-height: 1.5
         }
@@ -86,14 +78,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
         h6,
         p {
             text-shadow: 0 1px 0 #fff;
+            margin: 0;
+            font-weight: 400;
         }
 
+        #header .title,
         .num {
             font-weight: 900;
             letter-spacing: .125em;
-            font-family: Arial, serif;
+            font-family: Arial, serif
         }
 
+        .ktable h3,
         .tr {
             text-align: right
         }
@@ -114,19 +110,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             color: #111
         }
 
+        #photo,
         .percent {
-            position: absolute;
-            display: block;
-            overflow: hidden;
+            position: absolute
         }
 
-        .percent,
-        .kCell {
-            text-indent: 4px;
+        .percent {
+            display: block;
+            overflow: hidden
+        }
+
+        .kCell,
+        .percent {
+            text-indent: 4px
         }
 
         .langue {
-            margin: 0 24px;
+            margin: 0 24px
         }
 
         .bar {
@@ -180,23 +180,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             width: 100%
         }
 
+        .hm {
+            background: #fff;
+            box-shadow: -12px 1px 1px 0 #ccc;
+        }
+
         .progress .bar {
-            background: rgba(144, 173, 184, 1);
-            background: -moz-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
-            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(144, 173, 184, 1)), color-stop(100%, rgba(183, 222, 237, 1)));
-            background: -webkit-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
-            background: -o-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
-            background: -ms-linear-gradient(left, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%);
-            background: linear-gradient(to right, rgba(144, 173, 184, 1) 0%, rgba(183, 222, 237, 1) 100%)
+            background: #90adb8;
+            background: -moz-linear-gradient(left, #90adb8 0, #b7deed 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, #90adb8), color-stop(100%, #b7deed));
+            background: -webkit-linear-gradient(left, #90adb8 0, #b7deed 100%);
+            background: -o-linear-gradient(left, #90adb8 0, #b7deed 100%);
+            background: -ms-linear-gradient(left, #90adb8 0%, #b7deed 100%);
+            background: linear-gradient(to right, #90adb8 0, #b7deed 100%)
         }
 
         #photo {
             padding: 24px;
             width: 120px;
             height: 120px;
-            position: absolute;
             top: 0;
-            right: 0;
+            right: 0
         }
 
         #cv input {
@@ -204,102 +208,100 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             height: 24px;
             border: 0;
             padding: 0;
-            -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .2)
         }
 
-        #main,
-        #header,
         #cv,
-        section,
+        #header,
+        #main,
         .left,
-        .righ {
+        .righ,
+        section {
             margin: 0 auto;
-            position: relative;
+            position: relative
         }
 
-        #main,
         #header,
+        #main,
         section {
             width: 960px;
-            min-height: 24px;
+            min-height: 24px
         }
 
-        #header,
-        #he {
+        #he,
+        #header {
             height: 168px;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .left {
             float: left;
             width: 324px;
             text-align: right;
-            padding: 0 24px;
+            padding: 0 24px
         }
 
         .righ {
             float: left;
-            width: 564px;
+            width: 564px
         }
 
         #header .title {
             font-family: 'Sarpanch', Arial, sans-serif;
-            font-weight: 900;
             -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
-            text-shadow: -1px -1px 0px #f7f7f7, -2px -2px 2px #eee, 1px 1px 0px #f7f7f7, 2px 2px 2px #aaaaaa;
+            text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
             filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7);
             letter-spacing: 2px;
             padding: 24px 0;
             color: #777;
-            position: relative;
+            position: relative
         }
 
         .blokas:last-child {
-            margin-bottom: 48px;
+            margin-bottom: 48px
         }
 
         .blokas {
-            background: #F7F7F7;
+            background: #fbfbfb;
             display: block;
             position: relative;
-        }
-
-        .blokas {
-            -webkit-box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
-            -moz-box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
-            box-shadow: 0px 1px 0px 0px #ffffff inset, 0px -1px 0px 0px #cccccc inset;
+            -webkit-box-shadow: 0 1px 0 0 #fff inset, 0 -1px 0 0 #ccc inset;
+            -moz-box-shadow: 0 1px 0 0 #fff inset, 0 -1px 0 0 #ccc inset;
+            box-shadow: 0 1px 0 0 #fff inset, 0 -1px 0 0 #ccc inset;
+            background: linear-gradient(to right, #fafafa, #fafafa 357px, #ccc 360px, #fff 360px);
+            overflow: hidden;
         }
 
         #main {
-            -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
-            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 0 0 2px 0 #777;
+            -moz-box-shadow: 0 0 2px 0 #777;
+            box-shadow: 0 0 2px 0 #777
         }
 
         #header {
             background: #fafafa;
-            border-bottom: 1px solid #bbb;
+            border-bottom: 1px solid #ccc
         }
 
-        .prof:last-child,
-        .darb:last-child {
+        .darb:last-child,
+        .prof:last-child {
             -moz-box-shadow: none;
             -webkit-box-shadow: none;
-            box-shadow: none;
+            box-shadow: none
         }
 
-        .prof,
-        .darb {
-            -webkit-box-shadow: 0px -1px 0px 0px #ccc inset;
-            -moz-box-shadow: 0px -1px 0px 0px #ccc inset;
-            box-shadow: 0px -1px 0px 0px #ccc inset;
+        .darb,
+        .prof {
+            -webkit-box-shadow: 0 -1px 0 0 #ccc inset;
+            -moz-box-shadow: 0 -1px 0 0 #ccc inset;
+            box-shadow: 0 -1px 0 0 #ccc inset
         }
 
         a {
-            color: #000;
-            font-weight: 900;
+            color: #767;
+            font-weight: 900
         }
 
         a:focus {
@@ -307,11 +309,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             background: #ced
         }
 
-        a:link,
-        a:visited,
+        a:active,
         a:focus,
-        a:active {
-            color: #222;
+        a:link,
+        a:visited {
+            color: #767;
             text-decoration: none
         }
 
@@ -321,17 +323,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             cursor: pointer
         }
 
-        .ktable h3 {
-            text-align: right;
-        }
-
         .ktable {
             width: 936px;
-            padding: 0;
             float: left;
             font-family: 'Khand', Verdana, sans-serif;
             margin: -1px 0 0;
-            padding: 0 0 1px 0;
+            padding: 0 0 1px
         }
 
         .kCell,
@@ -345,16 +342,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
         .kCell {
             text-align: left;
-            -webkit-box-shadow: inset -1px 1px 0px 0px #ccc;
-            -moz-box-shadow: inset -1px 1px 0px 0px #ccc;
-            box-shadow: inset -1px 1px 0px 0px #ccc;
+            -webkit-box-shadow: inset -1px 1px 0 0 #ccc;
+            -moz-box-shadow: inset -1px 1px 0 0 #ccc;
+            box-shadow: inset -1px 1px 0 0 #ccc
         }
 
         .kCelli {
             width: 372px;
-            -webkit-box-shadow: -1px 0px 0px 0px #ccc inset;
-            -moz-box-shadow: -1px 0px 0px 0px #ccc inset;
-            box-shadow: -1px 0px 0px 0px #ccc inset;
+            -webkit-box-shadow: -1px 0 0 0 #ccc inset;
+            -moz-box-shadow: -1px 0 0 0 #ccc inset;
+            box-shadow: -1px 0 0 0 #ccc inset
         }
 
         .lent {
@@ -385,75 +382,85 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
         }
 
         .bg {
-            background-image: repeating-linear-gradient(45deg, rgba(200, 200, 200, 0.1) 100px, rgba(200, 200, 200, 0.3) 101px, rgba(200, 200, 200, 0.5) 200px, rgba(200, 200, 200, 0.2) 201px), repeating-linear-gradient(135deg, rgba(200, 200, 200, 0.2) 200px, rgba(200, 200, 200, 0.5) 201px, rgba(200, 200, 200, 0.2) 300px, rgba(200, 200, 200, 0.1) 301px), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEUAAAAAAAAICAgQEBAZGRkhISEpKSkxMTFCQkJKSkpSUlJaWlpjY2Nra2tzc3N7e3uEhISMjIyUlJScnJylpaWtra21tbW9vb3FxcXe3t7m5ubv7+////+kcD+qAAAAHXRSTlMAHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHzgkAGUAAABjSURBVBgZncEBAkJAEADAoRxyOORK9f939oedMXGS2Zk4KfxEvLiYGWgZKVQRlUxDR0fixiXizkZmoKEh0Yjo2fiy0zPQUkSsHMwcJCqJTUTHSqLw4cHIIuLNyM6TTGXhEPAHKRgDTFwqlV8AAAAASUVORK5CYII=');
+            background-image: repeating-linear-gradient(45deg, rgba(240, 240, 240, .1) 100px, rgba(240, 240, 240, .3) 101px, rgba(240, 240, 240, .5) 200px, rgba(240, 240, 240, .2) 201px), repeating-linear-gradient(135deg, rgba(240, 240, 240, .2) 200px, rgba(240, 240, 240, .5) 201px, rgba(240, 240, 240, .2) 300px, rgba(240, 240, 240, .1) 301px), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEUAAAAAAAAICAgQEBAZGRkhISEpKSkxMTFCQkJKSkpSUlJaWlpjY2Nra2tzc3N7e3uEhISMjIyUlJScnJylpaWtra21tbW9vb3FxcXe3t7m5ubv7+////+kcD+qAAAAHXRSTlMAHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHzgkAGUAAABjSURBVBgZncEBAkJAEADAoRxyOORK9f939oedMXGS2Zk4KfxEvLiYGWgZKVQRlUxDR0fixiXizkZmoKEh0Yjo2fiy0zPQUkSsHMwcJCqJTUTHSqLw4cHIIuLNyM6TTGXhEPAHKRgDTFwqlV8AAAAASUVORK5CYII=)
         }
 
-        @media only screen and (max-width : 960px) {
+        @media only screen and (max-width:960px) {
             .langue {
-                margin: 0;
+                margin: 0
+            }
+
+            .blokas {
+                background: none;
             }
 
             .left,
             .righ {
                 clear: both;
-                position: relative;
                 width: 100%;
                 padding: 0;
-                margin: 0 auto;
                 height: auto !important;
                 overflow: hidden;
-                text-align: left;
+                text-align: left
             }
 
+            #main,
             section {
-                width: auto;
+                width: auto
+            }
+
+            #main,
+            .left,
+            .righ {
+                position: relative;
+                margin: 0 auto
             }
 
             #main {
-                position: relative;
-                width: auto;
-                margin: 0 auto;
                 display: block;
-                border-radius: 0px 0px 0px 0px !important;
-                -moz-border-radius: 0px 0px 0px 0px !important;
-                -webkit-border-radius: 0px 0px 0px 0px !important;
+                border-radius: 0 0 0 0 !important;
+                -moz-border-radius: 0 0 0 0 !important;
+                -webkit-border-radius: 0 0 0 0 !important
             }
 
             #cv {
-                padding: 6px;
+                padding: 6px
             }
 
             #header {
                 display: block;
                 min-height: 168px;
                 height: auto;
-                width: auto;
-                padding: 0;
+                width: auto
             }
 
+            #header,
             #header .title {
-                padding: 0;
+                padding: 0
             }
 
             .kBody,
-            .kRow,
-            .kCell {
+            .kRow {
                 width: 100%;
-                margin: 0;
+                margin: 0
+            }
+
+            .kCell {
+                margin: 0
             }
 
             .ktable {
-                width: 100%;
+                width: 100%
             }
 
             .ktable h3 {
                 direction: ltr;
                 text-align: left;
-                text-indent: 0;
+                text-indent: 0
             }
 
             .kal {
-                width: 15%;
+                width: 15%
             }
 
             .kCell {
@@ -462,16 +469,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
                 word-break: break-all;
                 -webkit-hyphens: auto;
                 -moz-hyphens: auto;
-                hyphens: auto;
+                hyphens: auto
             }
 
             .titlelentbig {
-                width: 34%;
+                width: 34%
             }
 
             .titlelent {
-                font-size: 0.6250em;
-                line-height: 2.4;
+                font-size: .625em;
+                line-height: 2.4
             }
 
             #photo,
@@ -480,31 +487,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
                 margin: 0 auto;
                 overflow: hidden;
                 text-align: center;
-                position: relative;
-            }
-
-            h1,
-            h2,
-            span.cen {
-                text-align: center;
-            }
-
-            section h2 {
-                display: none;
+                position: relative
             }
 
             .hi {
-                display: none;
+                display: none
             }
 
-            .num {
-                text-align: center;
+            .num,
+            h1,
+            h2,
+            span.cen {
+                text-align: center
             }
 
             #flag {
-                -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-                -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-                box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+                -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+                -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
                 position: absolute;
                 display: block;
                 right: 0;
@@ -513,68 +513,85 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
                 height: 0;
                 border-top: 24px solid #aaa;
                 border-left: 24px solid transparent;
-                background: #fff;
+                background: #fff
             }
         }
 
         @media print {
 
-            html,
-            body,
+            .hm,
             #header,
-            .blokas {
+            .blokas,
+            body,
+            html {
                 min-width: 100%;
                 max-width: 100%;
                 background-color: transparent;
                 background-image: none !important;
-                background: none !important;
-                border: none !important;
+                background: 0 0 !important;
+                border: 0 !important;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
             }
 
             #header {
-                min-height: 144px;
-                height: auto;
+                min-height: 144px
             }
 
-            #main,
             #cv,
+            #main,
             #photo {
-                border: 0;
+                border: 0
             }
 
             .kCell {
                 border: 1px solid #eee;
-                box-sizing: border-box;
+                box-sizing: border-box
             }
 
-            #main,
             #cv,
-            html,
+            #main,
             body,
-            .righ,
-            .left,
+            html {
+                margin: 0;
+                width: auto
+            }
+
+            #cv,
             #header,
+            #main,
+            .left,
+            .righ,
+            body,
+            html,
+            img {
+                padding: 0;
+                height: auto
+            }
+
+            #header,
+            .left,
             img {
                 margin: 0;
-                padding: 0;
-                width: auto;
-                height: auto;
+                width: 23%
             }
 
-            .left {
-                width: 23%;
+            #header,
+            img {
+                width: auto
             }
 
             .righ {
                 width: 75%;
-                margin-left: 2%;
+                margin: 0 0 0 2%
             }
 
             .blokas,
             .kCelli {
                 -webkit-box-shadow: none;
                 -moz-box-shadow: none;
-                box-shadow: none;
+                box-shadow: none
             }
 
             h1,
@@ -584,19 +601,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             h5,
             h6,
             p {
-                font-size: 10pt;
+                font-size: 10pt
             }
 
-            .ktable,
             .kBody,
+            .kCell,
             .kRow,
-            .kCell {
+            .ktable {
                 display: block;
-                width: 100%;
+                width: 100%
             }
 
             .kCell {
-                width: 15%;
+                width: 15%
             }
 
             .kCelli {
@@ -605,26 +622,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
                 word-break: break-all;
                 -webkit-hyphens: auto;
                 -moz-hyphens: auto;
-                hyphens: auto;
+                hyphens: auto
             }
 
             .titlelentbig {
-                width: 30%;
+                width: 30%
             }
 
             #main:before {
-                font-size: 24pt;
+                font-size: 24pt
             }
         }
 
         ::-moz-selection {
             color: #eee;
-            background: #090;
+            background: #090
         }
 
         ::selection {
             color: #eee;
-            background: #090;
+            background: #090
         }
     </style>
     <!--[if lt IE 9]>
@@ -661,7 +678,8 @@ document.createElement('section');
                 </section>
                 <section>
                     <h2 class="left hi">El. paštas(-ai)</h2>
-                    <h3 id="email" class="righ num"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
+                    <h3 id="email" class="righ num"><a
+                            href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
                 </section>
                 <section>
                     <h2 class="left">Adresas(-ai)</h2>
@@ -826,7 +844,8 @@ document.createElement('section');
                 <section>
                     <h2 class="left num">Darbo kompiuteriu gebėjimai ir kompetencijos</h2>
                     <h3 class="righ sss">Operacinės sistemos: Unix/Linux, Windows, Mac OS, Android.
-                        Programinės įrangos paketai: Inkscape (vektorinė grafika), Gimp(rasterinė grafika), Blender(3D grafika),
+                        Programinės įrangos paketai: Inkscape (vektorinė grafika), Gimp(rasterinė grafika), Blender(3D
+                        grafika),
                         Photoshop(pagrindai), MS Office programos(Word, Exel, PowerPoint) ir kt.</h3>
                 </section>
             </div>
