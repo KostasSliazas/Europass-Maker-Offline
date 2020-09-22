@@ -206,7 +206,7 @@ button:hover,
     z-index: 999;
     text-transform: uppercase;
     width: 240px;
-    top: 0;
+    top: 8px;
     left: 50%;
     position: fixed;
     margin: 0 0 0 -120px;
@@ -327,4 +327,7 @@ button::-moz-focus-inner {
         padding: 2px;
         appearance: none;
     }
+}
+#main {
+    margin-top: 32px;
 }
