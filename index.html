@@ -5,24 +5,34 @@
     <meta charset="utf-8">
     <title>CV Europass</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Archivo&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Khand&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sarpanch&amp;subset=latin-ext" rel="stylesheet">
-    <link
-        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII="
-        rel="icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Kodchasan&display=swap" rel="stylesheet">
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
     <style>
         body {
             margin: 0;
-            font: 1em/1.5 'Archivo', Arial, Geneva, Tahoma, sans-serif;
+            font: 16px/1.5 'Kodchasan', Arial, Geneva, Tahoma, sans-serif;
             background: #f7f7f7;
-            color: #767;
+            color: #545;
         }
 
-        h2.left {
-            font-family: 'Khand', Verdana, sans-serif
+        h3 {
+            letter-spacing: 1px;
         }
-
+        .title {
+            letter-spacing: .125em;
+            font-weight: 900;
+            direction: rtl
+        }
+        #header .title {
+            font-family: 'Concert One', cursive;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
+            text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7);
+            letter-spacing: 2px;
+            padding: 24px 0;
+            color: #777;
+            position: relative
+        }
         #vardas,
         .kCell h2 {
             text-transform: capitalize;
@@ -86,19 +96,11 @@
         .num {
             font-weight: 900;
             letter-spacing: .125em;
-            font-family: Arial, serif
         }
 
         .ktable h3,
         .tr {
             text-align: right
-        }
-
-        .title {
-            font-family: 'Khand', Verdana, sans-serif;
-            letter-spacing: .125em;
-            font-weight: 900;
-            direction: rtl
         }
 
         .progress {
@@ -248,17 +250,6 @@
             width: 564px
         }
 
-        #header .title {
-            font-family: 'Sarpanch', Arial, sans-serif;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
-            text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
-            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7);
-            letter-spacing: 2px;
-            padding: 24px 0;
-            color: #777;
-            position: relative
-        }
-
         .blokas:last-child {
             margin-bottom: 48px
         }
@@ -326,7 +317,6 @@
         .ktable {
             width: 936px;
             float: left;
-            font-family: 'Khand', Verdana, sans-serif;
             margin: -1px 0 0;
             padding: 0 0 1px
         }
@@ -653,7 +643,7 @@ document.createElement('section');
     <div id="main">
         <div id="header">
             <div id="he" class="left">
-                <h1 class="title">Europass gyvenimo <br>aprašymas</h1>
+                <h1 class="title">Europass <br>gyvenimo aprašymas</h1>
             </div>
             <h1 class="remove"><span style="display:none;">Online</span>Offline CV Europass maker</h1>
             <div id="photo"><img src="person.png" id="preview" alt="" /> </div>
