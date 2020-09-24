@@ -5,32 +5,39 @@
     <meta charset="utf-8">
     <title>CV Europass</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII="
+        rel="icon" type="image/x-icon" />
     <style>
         body {
             margin: 0;
             font: 16px/1.5 'Roboto', Arial, Geneva, Tahoma, sans-serif;
             background: #f7f7f7;
-            color: #545;
+            color: #545
         }
+
         .title {
             letter-spacing: .125em;
             font-weight: 900;
             direction: rtl
         }
-        .left{font-family: 'Roboto Condensed', sans-serif}
+
+        .left {
+            font-family: 'Roboto Condensed', sans-serif
+        }
+
         #header .title {
             font-family: 'Roboto', sans-serif;
             text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
-            letter-spacing: 2px;
             padding: 24px 0;
             color: #777;
             position: relative
         }
+
         #vardas,
         .kCell h2 {
-            text-transform: capitalize;
+            text-transform: capitalize
         }
 
         #email {
@@ -55,8 +62,7 @@
 
         h1 {
             font-size: 1.5em;
-            line-height: 1;
-            margin: 1em 0 0
+            line-height: 1
         }
 
         h2,
@@ -84,13 +90,13 @@
         p {
             text-shadow: 0 1px 0 #fff;
             margin: 0;
-            font-weight: 400;
+            font-weight: 400
         }
 
         #header .title,
         .num {
             font-weight: 900;
-            letter-spacing: .125em;
+            letter-spacing: .125em
         }
 
         .ktable h3,
@@ -180,6 +186,7 @@
         .hm {
             background: #fff;
             box-shadow: -12px 1px 1px 0 #ccc;
+            font-family: 'Roboto Condensed', sans-serif
         }
 
         .progress .bar {
@@ -256,7 +263,7 @@
             -moz-box-shadow: 0 1px 0 0 #fff inset, 0 -1px 0 0 #ccc inset;
             box-shadow: 0 1px 0 0 #fff inset, 0 -1px 0 0 #ccc inset;
             background: linear-gradient(to right, #fafafa, #fafafa 357px, #ccc 360px, #fff 360px);
-            overflow: hidden;
+            overflow: hidden
         }
 
         #main {
@@ -325,7 +332,7 @@
         }
 
         .kCell {
-            font-size: 0.75em;
+            font-size: .75em;
             text-align: left;
             -webkit-box-shadow: inset -1px 1px 0 0 #ccc;
             -moz-box-shadow: inset -1px 1px 0 0 #ccc;
@@ -376,7 +383,7 @@
             }
 
             .blokas {
-                background: none;
+                background: 0 0
             }
 
             .left,
@@ -433,7 +440,7 @@
             }
 
             .ktable {
-                width: 100%;
+                width: 100%
             }
 
             .ktable h3 {
@@ -465,7 +472,7 @@
             }
 
             .hm {
-                box-shadow: 0 1px 1px 0 #ccc;
+                box-shadow: 0 1px 1px 0 #ccc
             }
 
             #photo,
@@ -492,6 +499,14 @@
         @media print {
 
             #header,
+            body,
+            html {
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none
+            }
+
+            #header,
             .blokas,
             body,
             html {
@@ -499,15 +514,15 @@
                 max-width: 100%;
                 background-color: transparent;
                 background-image: none !important;
-                background: 0 0 !important;
-                border: 0 !important;
-                -webkit-box-shadow: none;
-                -moz-box-shadow: none;
-                box-shadow: none;
+                border: 0 !important
             }
 
-            .progress .bar {
-                background: none !important;
+            #header,
+            .blokas,
+            .progress .bar,
+            body,
+            html {
+                background: 0 0 !important
             }
 
             #header {
@@ -544,12 +559,11 @@
             .left,
             img {
                 margin: 0;
-                width: 23%
+                width: auto
             }
 
-            #header,
-            img {
-                width: auto
+            .left {
+                width: 23%
             }
 
             .righ {
@@ -558,8 +572,8 @@
             }
 
             #main,
-            .hm,
-            .blokas {
+            .blokas,
+            .hm {
                 -webkit-box-shadow: none;
                 -moz-box-shadow: none;
                 box-shadow: none
@@ -575,8 +589,15 @@
                 font-size: 10pt
             }
 
+            .kBody {
+                width: 100%
+            }
+
             .kBody,
-            .kCell,
+            .kCell {
+                display: block
+            }
+
             .kRow,
             .ktable {
                 display: block;
@@ -585,14 +606,14 @@
 
             .ktable {
                 margin: 0;
-                border-collapse: collapse;
+                border-collapse: collapse
             }
 
             .kCell {
                 width: 15%;
                 border: 1px solid #ccc;
                 border-width: 1px 1px 0 0;
-                box-shadow: 0 0 0 1px #ccc;
+                box-shadow: 0 0 0 1px #ccc
             }
 
             .kCelli {
