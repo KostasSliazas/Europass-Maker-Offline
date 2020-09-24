@@ -108,9 +108,8 @@
             width: auto;
             display: block;
             position: relative;
-            padding: 2px 4px 2px 2px;
-            margin: 0;
-            color: #111
+            padding: 3px 3px 2px 2px;
+            margin: 0
         }
 
         #photo,
@@ -120,6 +119,7 @@
 
         .percent {
             display: block;
+            line-height: 19px;
             overflow: hidden
         }
 
@@ -133,10 +133,9 @@
         }
 
         .bar {
-            height: 18px;
-            line-height: 18px;
+            height: 19px;
             display: block;
-            border: 1px solid #aaa
+            box-shadow: 0 0 0 1px#aaa
         }
 
         .c00 {
@@ -190,13 +189,11 @@
         }
 
         .progress .bar {
-            background: #90adb8;
-            background: -moz-linear-gradient(left, #90adb8 0, #b7deed 100%);
-            background: -webkit-gradient(left top, right top, color-stop(0%, #90adb8), color-stop(100%, #b7deed));
-            background: -webkit-linear-gradient(left, #90adb8 0, #b7deed 100%);
-            background: -o-linear-gradient(left, #90adb8 0, #b7deed 100%);
-            background: -ms-linear-gradient(left, #90adb8 0%, #b7deed 100%);
-            background: linear-gradient(to right, #90adb8 0, #b7deed 100%)
+            background: #ccc;
+            background: rgb(255, 255, 255);
+            background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
         }
 
         #photo {
@@ -334,9 +331,9 @@
         .kCell {
             font-size: .75em;
             text-align: left;
-            -webkit-box-shadow: inset -1px 1px 0 0 #ccc;
-            -moz-box-shadow: inset -1px 1px 0 0 #ccc;
-            box-shadow: inset -1px 1px 0 0 #ccc
+            -webkit-box-shadow: inset -1px 1px 0 0 #ccc, 0 1px 0 0 #ccc;
+            -moz-box-shadow: inset -1px 1px 0 0 #ccc, 0 1px 0 0 #ccc;
+            box-shadow: inset -1px 1px 0 0 #ccc, 0 1px 0 0 #ccc;
         }
 
         .kCelli {
@@ -604,16 +601,8 @@
                 width: 100%
             }
 
-            .ktable {
-                margin: 0;
-                border-collapse: collapse
-            }
-
             .kCell {
                 width: 15%;
-                border: 1px solid #ccc;
-                border-width: 1px 1px 0 0;
-                box-shadow: 0 0 0 1px #ccc
             }
 
             .kCelli {
