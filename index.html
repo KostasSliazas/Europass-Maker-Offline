@@ -509,9 +509,6 @@
             html {
                 min-width: 100%;
                 max-width: 100%;
-                background-color: transparent;
-                background-image: none !important;
-                border: 0 !important
             }
 
             #header,
@@ -519,6 +516,7 @@
             .progress .bar,
             body,
             html {
+                border: 0 !important;
                 background: 0 0 !important
             }
 
@@ -527,36 +525,25 @@
             }
 
             #cv,
-            #main,
-            #photo {
-                border: 0
-            }
-
-            #cv,
-            #main,
-            body,
-            html {
-                margin: 0;
-                width: auto
-            }
-
-            #cv,
             #header,
             #main,
-            .left,
-            .righ,
             body,
             html,
             img {
-                padding: 0;
+                width: auto;
                 height: auto
             }
 
+            #cv,
             #header,
+            #main,
+            .ktable,
             .left,
+            body,
+            html,
             img {
                 margin: 0;
-                width: auto
+                padding: 0;
             }
 
             .left {
@@ -564,7 +551,6 @@
             }
 
             .righ {
-                width: 75%;
                 margin: 0 0 0 2%
             }
 
@@ -576,33 +562,17 @@
                 box-shadow: none
             }
 
-            h1,
+            h1 {
+                font-size: 13pt;
+            }
+
             h2,
             h3,
-            h4,
-            h5,
-            h6,
             p {
                 font-size: 10pt
             }
-
-            .kBody {
-                width: 100%
-            }
-
-            .kBody,
             .kCell {
-                display: block
-            }
-
-            .kRow,
-            .ktable {
-                display: block;
-                width: 100%
-            }
-
-            .kCell {
-                width: 15%;
+                width: 15%
             }
 
             .kCelli {
@@ -618,19 +588,10 @@
                 width: 30%
             }
 
-            #main:before {
-                font-size: 24pt
+            ::selection {
+                color: #eee;
+                background: #090
             }
-        }
-
-        ::-moz-selection {
-            color: #eee;
-            background: #090
-        }
-
-        ::selection {
-            color: #eee;
-            background: #090
         }
     </style>
     <!--[if lt IE 9]>
