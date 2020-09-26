@@ -27,6 +27,11 @@
     background-repeat: repeat-x;
 }
 
+::selection {
+    color: #eee;
+    background: #090
+}
+
 @keyframes animatedBackground {
     0% {
         background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 30%, rgba(255, 211, 148, 1) 100%);
@@ -328,6 +333,7 @@ button::-moz-focus-inner {
         appearance: none;
     }
 }
+
 #main {
     margin-top: 32px;
 }
