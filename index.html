@@ -9,7 +9,7 @@
   <style>
     body {
       margin: 0;
-      font: 16px/1.5 Arial, Helvetica, sans-serif;
+      font: 16px/1.5 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       background: #f7f7f7;
       color: #767;
     }
@@ -173,7 +173,9 @@
     }
 
     .hm {
-      box-shadow: -12px 1px 1px 0 #ccc;
+      -webkit-box-shadow: -12px 1px 1px #aaa, -12px 2px 1px #fff;
+      box-shadow: -12px 1px 1px #aaa, -12px 2px 1px #fff;
+      text-transform: uppercase;
     }
 
     .progress .bar {
@@ -239,6 +241,10 @@
       width: 585px
     }
 
+    #main {
+      box-shadow: 0 0 1px 1px #fff, 0 0 2px 1px #aaa;
+    }
+
     #header .title {
       -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
       text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
@@ -254,7 +260,6 @@
     }
 
     .blokas {
-      background: rgba(250, 250, 250, 0.5);
       display: block;
       position: relative;
       overflow: hidden;
@@ -262,10 +267,8 @@
 
     .blokas,
     #header {
-      margin-bottom: 24px;
-      -webkit-box-shadow: 0 0 2px 0 #777;
-      -moz-box-shadow: 0 0 2px 0 #777;
-      box-shadow: 0 0 2px 0 #777
+      -webkit-box-shadow: 0 1px 1px #fff, 0 -1px 0 #ddd, 0 -1px 1px #ddd;
+      box-shadow: 0 1px 1px #fff, 0 -1px 0 #ddd, 0 -1px 1px #ddd;
     }
 
     #header {
@@ -288,7 +291,6 @@
 
     a {
       color: #767;
-      font-weight: 900
     }
 
     a:focus {
@@ -368,12 +370,12 @@
     }
 
     .blokas>section:first-of-type {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.8);
     }
 
     section {
-      background: -o-linear-gradient(left, rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.5) 357px, rgba(204, 204, 204, 0.5) 360px, rgba(255, 255, 255, 0.5) 360px);
-      background: linear-gradient(to right, rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.5) 357px, rgba(204, 204, 204, 0.5) 360px, rgba(255, 255, 255, 0.5) 360px);
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0.3) 356px, rgba(255, 255, 255, 0.3) 356px 358px, rgb(204, 204, 204) 358px, rgba(255, 255, 255, .8) 360px);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 356px, rgba(255, 255, 255, 0.3) 356px 358px, rgb(204, 204, 204) 358px, rgba(255, 255, 255, .8) 360px)
     }
 
     .bg {
@@ -477,10 +479,6 @@
         line-height: 2.4
       }
 
-      .hm {
-        box-shadow: 0 1px 1px 0 #ccc;
-      }
-
       #photo,
       #preview,
       img {
@@ -519,6 +517,7 @@
 
     @media print {
 
+      #main,
       #header,
       .blokas,
       body,
@@ -532,6 +531,7 @@
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+        width: 100%;
       }
 
       #header {
@@ -613,11 +613,11 @@
       }
 
       .kCell {
-        width: 15%
+        width: 8%
       }
 
       .kCelli {
-        width: 25%;
+        width: 16%;
         -ms-word-break: break-all;
         word-break: break-all;
         -webkit-hyphens: auto;
@@ -678,7 +678,7 @@ document.createElement('section');
         </section>
         <section>
           <h2 class="left hi">El. paštas(-ai)</h2>
-          <h3 id="email" class="righ num"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
+          <h3 id="email"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
         </section>
         <section>
           <h2 class="left">Adresas(-ai)</h2>
