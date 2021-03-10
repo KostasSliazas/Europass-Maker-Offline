@@ -274,11 +274,7 @@ function htmls () {
           classes[($.inArray(this.className, classes) + 1) % classes.length]
       })
   })
-  $('#cv').sortable({
-    helper: 'clone',
-    forceHelperSize: !1,
-    axis: 'y'
-  })
+
 
   function outf () {
     $('#cv input').replaceWith(function () {
@@ -438,6 +434,7 @@ function htmls () {
   $(document).keyup(function (e) {
     if ($('input:focus') && e.keyCode === 13) {
       outf()
+      document.title = document.getElementById('vardas').innerText;
     }
   })
 }(window.jQuery))
