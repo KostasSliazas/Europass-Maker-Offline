@@ -275,7 +275,12 @@ function htmls () {
       })
   })
 
-
+  $('#cv').sortable({
+    helper: 'clone',
+    forceHelperSize: !1,
+    axis: 'y'
+  })
+  
   function outf () {
     $('#cv input').replaceWith(function () {
       if (this.id === 'email') {
