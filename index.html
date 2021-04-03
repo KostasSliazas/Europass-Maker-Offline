@@ -6,8 +6,633 @@
   <title>CV Europass</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAmJLR0QA94lURI0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhCAMVKBRuY53kAAAAp0lEQVQYGQXBkQLFMAyG0bzlMFgsBovB4I/FYnE4HN5HGA6Hn95zDAAAgHtjwJ15A/B4yKBaViuAPbKM3TU1+wYy47TPpd5L/sIhf+2K6fvXlMnT1DDlKNhd/p6RhVWOE3CNXRUXNqrfwIrqTf5ilXEBT5u9qYEpxwJo6jEEdoUc+NaYigsMVx7t8Ltr+gfG6pqa7XVVBwzkMcJ/FSHAgOdc5w1rAfwBOKCycaxSaL4AAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" href="stylea.css">
-  
+  <style>
+    body {
+      margin: 0;
+      font: 16px/1.5 Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+      background: #f7f7f7;
+      color: #545;
+      font-variant-caps: all-small-caps;
+    }
+
+    #vardas,
+    .kCell h2 {
+      text-transform: capitalize;
+    }
+
+    #email {
+      text-transform: lowercase
+    }
+
+    img {
+      height: 116px;
+      width: 116px;
+      background: #fff;
+      padding: 2px;
+      -moz-box-shadow: 0 0 0 6px #fafafa, 0 0 0 7px #ccc, 0 0 0 8px #fff;
+      -webkit-box-shadow: 0 0 0 6px #fafafa, 0 0 0 7px #ccc, 0 0 0 8px #fff;
+      box-shadow: 0 0 0 6px #fafafa, 0 0 0 7px #ccc, 0 0 0 8px #fff;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1;
+      margin: 1em 0 0
+    }
+
+    h2,
+    h3 {
+      font-size: 1em
+    }
+
+    blockquote,
+    label,
+    p,
+    pre,
+    td,
+    th,
+    ul {
+      font-size: 1em;
+      line-height: 1.5
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      text-shadow: 0 1px 0 #fff;
+      font-weight: 400;
+      margin: 0 6px;
+    }
+
+    #header .title {
+      letter-spacing: .125em;
+    }
+
+    .ktable h3,
+    .tr {
+      text-align: right
+    }
+
+    .title {
+      letter-spacing: .125em;
+      font-weight: 900;
+      direction: rtl
+    }
+
+    .progress {
+      width: auto;
+      display: block;
+      position: relative;
+      padding: 2px 4px 2px 2px;
+      margin: 0;
+      color: #111
+    }
+
+    #photo,
+    .percent {
+      position: absolute
+    }
+
+    .percent {
+      display: block;
+      overflow: hidden
+    }
+
+    .kCell,
+    .percent {
+      text-indent: 4px
+    }
+
+    .langue {
+      margin: 0 24px
+    }
+
+    .bar {
+      height: 18px;
+      line-height: 18px;
+      display: block;
+      border: 1px solid #aaa
+    }
+
+    .edit {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .c00 {
+      width: 0
+    }
+
+    .c10 {
+      width: 10%
+    }
+
+    .c20 {
+      width: 20%
+    }
+
+    .c30 {
+      width: 30%
+    }
+
+    .c40 {
+      width: 40%
+    }
+
+    .c50 {
+      width: 50%
+    }
+
+    .c60 {
+      width: 60%
+    }
+
+    .c70 {
+      width: 70%
+    }
+
+    .c80 {
+      width: 80%
+    }
+
+    .c90 {
+      width: 90%
+    }
+
+    .c100 {
+      width: 100%
+    }
+
+    .hm {
+      -webkit-box-shadow: -14px 0 0 1px #ccc, -16px 0 0 2px #eee;
+      box-shadow: -14px 0 0 1px #ccc, -16px 0 0 2px #eee;
+    }
+
+    .progress .bar {
+      background: #90adb8;
+      background: -moz-linear-gradient(left, #90adb8 0, #b7deed 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #90adb8), color-stop(100%, #b7deed));
+      background: -webkit-linear-gradient(left, #90adb8 0, #b7deed 100%);
+      background: -o-linear-gradient(left, #90adb8 0, #b7deed 100%);
+      background: -ms-linear-gradient(left, #90adb8 0%, #b7deed 100%);
+      background: linear-gradient(to right, #90adb8 0, #b7deed 100%)
+    }
+
+    #photo {
+      padding: 24px;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      right: 0;
+    }
+
+    #cv input {
+      line-height: 24px;
+      height: 24px;
+      border: 0;
+      padding: 0;
+      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .2)
+    }
+
+    #cv,
+    #header,
+    #main,
+    .left,
+    .righ,
+    section {
+      margin: 0 auto;
+      position: relative
+    }
+
+    #header,
+    #main,
+    section {
+      width: 960px;
+      min-height: 24px
+    }
+
+    #he,
+    #header {
+      height: 168px;
+      overflow: hidden
+    }
+
+    .left {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      float: left;
+      width: 324px;
+      text-align: right;
+      padding: 0 24px
+    }
+
+    .righ {
+      float: right;
+      letter-spacing: 1px;
+      width: 576px;
+      margin-right: 12px;
+    }
+
+    #main {
+      margin: 24px auto;
+      padding-bottom: 1px;
+    }
+
+    #header .title {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7)";
+      text-shadow: -1px -1px 0 #f7f7f7, -2px -2px 2px #eee, 1px 1px 0 #f7f7f7, 2px 2px 2px #aaa;
+      filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=315, Color=#f7f7f7);
+      letter-spacing: 2px;
+      padding: 24px 0;
+      color: #777;
+      position: relative
+    }
+
+    .blokas {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blokas,
+    #header {
+      -webkit-box-shadow: 0 0 0 1px #fff inset, 0 0 0 1px #ccc;
+      box-shadow: 0 0 0 1px #fff inset, 0 0 0 1px #ccc;
+    }
+
+    #header {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .darb:last-child,
+    .prof:last-child {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none
+    }
+
+    .darb,
+    .prof {
+      -webkit-box-shadow: 0 -1px 0 0 #ccc inset;
+      -moz-box-shadow: 0 -1px 0 0 #ccc inset;
+      box-shadow: 0 -1px 0 0 #ccc inset
+    }
+
+    a {
+      color: #767;
+    }
+
+    a:focus {
+      outline: 0;
+      background: #ced
+    }
+
+    a:active,
+    a:focus,
+    a:link,
+    a:visited {
+      color: #767;
+      text-decoration: none
+    }
+
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer
+    }
+
+    .ktable {
+      width: 936px;
+      float: left;
+      margin: -1px 0 0;
+      padding: 0 0 1px
+    }
+
+    .kCell,
+    .kCelli {
+      box-sizing: border-box;
+      float: left;
+      height: 24px;
+      overflow: hidden;
+      line-height: 24px
+    }
+
+    .kCell {
+      text-align: left;
+      -webkit-box-shadow: 0 0 0 1px #ddd;
+      box-shadow: 0 0 0 1px #ddd;
+      background: #fafafa;
+    }
+
+    .kCelli {
+      width: 372px;
+      -webkit-box-shadow: -1px 0 0 0 #ccc inset;
+      -moz-box-shadow: -1px 0 0 0 #ccc inset;
+      box-shadow: -1px 0 0 0 #ccc inset
+    }
+
+    .lent {
+      width: 112px
+    }
+
+    .titlelentbig {
+      width: 224px
+    }
+
+    .titlelent {
+      height: 48px
+    }
+
+    .hauto {
+      text-align: center
+    }
+
+    section:after {
+      content: " ";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      width: 0;
+      clear: both;
+      font-size: 0;
+      overflow: hidden
+    }
+
+    .blokas>section:first-of-type {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    section {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) 356px, rgb(204, 204, 204) 356px, rgb(204, 204, 204) 357px, rgb(255, 255, 255) 357px, rgba(255, 255, 255, 0.8) 358px);
+    }
+
+    .bg {
+      background: url(data:image/png;base64,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)
+    }
+
+    .blokas section:last-child {
+      padding-bottom: 24px;
+    }
+
+    @media only screen and (max-width:960px) {
+      .langue {
+        margin: 0
+      }
+
+      .blokas,
+      section {
+        background: none;
+      }
+
+      .left,
+      .righ {
+        clear: both;
+        width: 100%;
+        padding: 0;
+        height: auto !important;
+        overflow: hidden;
+        text-align: left
+      }
+
+      #main,
+      section {
+        width: auto
+      }
+
+      .left,
+      .righ {
+        position: relative;
+        float: none;
+        margin: 0 6px
+      }
+
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+
+      #cv {
+        padding: 6px
+      }
+
+      #header {
+        display: block;
+        min-height: 168px;
+        height: auto;
+        width: auto
+      }
+
+      .kBody,
+      .kRow {
+        width: 100%;
+        margin: 0
+      }
+
+      .blokas>section:first-of-type .left,
+      .kCell {
+        margin: 0
+      }
+
+      .ktable {
+        width: 100%
+      }
+
+      .ktable h3 {
+        direction: ltr;
+        text-align: left;
+        text-indent: 0
+      }
+
+      .kal {
+        width: 15%
+      }
+
+      .kCell {
+        width: 17%;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto
+      }
+
+      .titlelentbig {
+        width: 34%
+      }
+
+      .titlelent {
+        font-size: .625em;
+        line-height: 2.4
+      }
+
+      #photo,
+      #preview,
+      img {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        position: relative
+      }
+
+      .hi {
+        display: none
+      }
+
+      .num,
+      h1,
+      h2,
+      span.cen {
+        text-align: center
+      }
+
+      .hm {
+        -webkit-box-shadow: 0 0 0 1px #ccc, 0 0 0 2px #eee;
+        box-shadow: 0 0 0 1px #ccc, 0 0 0 2px #eee;
+      }
+
+      #flag {
+        -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+        -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 24px solid #aaa;
+        border-left: 24px solid transparent;
+        background: #fff
+      }
+    }
+
+    @media print {
+
+      #main,
+      #header,
+      .blokas,
+      body,
+      html {
+        min-width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        background-image: none !important;
+        background: 0 0 !important;
+        border: 0 !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+      }
+
+      #header {
+        min-height: 144px
+      }
+
+      #cv,
+      #main,
+      #photo {
+        border: 0
+      }
+
+      .kCell {
+        border: 1px solid #eee;
+        box-sizing: border-box
+      }
+
+      #cv,
+      #main,
+      body,
+      html {
+        margin: 0;
+        width: auto
+      }
+
+      #cv,
+      #header,
+      #main,
+      .left,
+      .righ,
+      body,
+      html,
+      img {
+        padding: 0;
+        height: auto
+      }
+
+      #header,
+      .left,
+      img {
+        margin: 0;
+        width: 23%
+      }
+
+      #header,
+      img {
+        width: auto
+      }
+
+      .righ {
+        width: 75%;
+        margin: 0 0 0 2%
+      }
+
+      .hm,
+      .blokas,
+      .kCelli {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        font-size: 10pt
+      }
+
+      .kBody,
+      .kCell,
+      .kRow,
+      .ktable {
+        display: block;
+        width: 100%
+      }
+
+      .kCell {
+        width: 8%
+      }
+
+      .kCelli {
+        width: 16%;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto
+      }
+
+      .titlelentbig {
+        width: 30%
+      }
+
+      #main:before {
+        font-size: 24pt
+      }
+    }
+  </style>
   <!--[if lt IE 9]>
 <script type="text/javascript">
 document.createElement('section');
@@ -195,9 +820,7 @@ document.createElement('section');
           <h2 class="left num hm">Socialiniai gebėjimai ir kompetencijos</h2>
         </section>
         <section>
-
           <h3 class="righ">Geri bendravimo gebėjimai Gebėjimai dirbti komandoje ir savarankiškai</h3>
-        </section>
         </section>
       </div>
       <div class="blokas">
