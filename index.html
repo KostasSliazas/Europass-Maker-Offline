@@ -67,7 +67,6 @@
     h5,
     h6,
     p {
-      text-shadow: 0 1px 0 #fff;
       font-weight: 400;
       margin: 0 6px;
     }
@@ -269,10 +268,8 @@
 
     .blokas,
     #header {
-      -webkit-box-shadow: 0 0 0 1px #D7D8DE;
-      box-shadow: 0 0 0 1px #D7D8DE;
-      border-top: 1px solid #fff;
-      box-sizing: border-box;
+      -webkit-box-shadow: 0 0 0 1px #D7D8DE, 0 0 0 1px #fff inset;
+      box-shadow: 0 0 0 1px #D7D8DE, 0 0 0 1px #fff inset;
     }
 
     #header {
@@ -374,11 +371,11 @@
     }
 
     .blokas>section:first-of-type {
-      background: rgba(255, 255, 255, 0.8);
+      background: #fff;
     }
 
     section {
-      background-image: linear-gradient(to right, rgba(245, 245, 245, 0.4) 360px, #D7D8DE 360px 361px, rgba(255, 255, 255, 0.8) 361px)
+      background-image: linear-gradient(to right, rgba(245, 245, 245, 0.4) 360px, #D7D8DE 360px 361px, #fff 361px)
     }
 
     .blokas section:last-child {
@@ -670,7 +667,7 @@ document.createElement('section');
         </section>
         <section>
           <h2 class="left hi">El. paštas(-ai)</h2>
-          <h3 id="email"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
+          <h3 class="righ" id="email"><a href="mailto:e-pastas@gmail.com?subject=DARBAS">e-pastas@gmail.com</a></h3>
         </section>
         <section>
           <h2 class="left">Adresas(-ai)</h2>
