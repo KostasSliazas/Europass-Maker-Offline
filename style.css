@@ -177,7 +177,6 @@ button:hover,
   top: 0;
   font-weight: 900;
   font-size: 24px;
-  font-family: serif;
 }
 
 .save {
@@ -232,15 +231,6 @@ button::-moz-focus-inner {
   outline: none;
 }
 
-.remove {
-  position: absolute;
-  color: #777;
-  top: 0;
-  left: 0;
-  padding: 0 12px;
-  text-indent: -9999px;
-}
-
 #info-text {
   padding: 0 24px 24px;
 }
@@ -275,10 +265,6 @@ button::-moz-focus-inner {
   border-left: 1px solid #eee;
   box-sizing: border-box;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.75);
-}
-
-.blokas:hover {
-  background: #cde;
 }
 
 .kCell select {
