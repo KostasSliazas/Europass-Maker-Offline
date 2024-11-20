@@ -41,15 +41,15 @@ Exporting Your CV
 
 Contributions are welcome! If you’d like to improve the project, feel free to:
 
-    Fork the repository.
-    Create a feature branch:
-
-git checkout -b feature-name
-
+   Fork the repository.
+   Create a feature branch:   
+   ```bash
+    git checkout -b feature-name
+   ```
 Commit your changes:
-
+   ```bash
     git commit -m "Describe your changes"
-
+   ```
     Push to your forked repository and create a pull request.
 
 ## License
