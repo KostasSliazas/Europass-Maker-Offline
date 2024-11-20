@@ -50,7 +50,8 @@ Commit your changes:
    ```bash
     git commit -m "Describe your changes"
    ```
-    Push to your forked repository and create a pull request.
+
+   Push to your forked repository and create a pull request.
 
 ## License
 
