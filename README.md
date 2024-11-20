@@ -1,27 +1,57 @@
-# Europass-Maker-Offline
+# Europass Maker Offline
 
-when you need edit import to your cv style.css
-and at the bottom jquery 
-and re.min.js
+**Europass Maker Offline** is a web application designed to help users create Europass CVs efficiently and offline. This tool provides a user-friendly interface to format, organize, and export resumes in line with Europass standards.
 
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-....
-    <link rel="stylesheet" href="style.css">
-...
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-....
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="re.min.js"></script>
-....
-  </body>
-</html>
+## Features
 
+- **Offline Functionality**: Works entirely offline—no internet connection required.
+- **User-Friendly Interface**: Intuitive design for creating professional Europass CVs.
+- **Customizable Fields**: Easily update personal information, work experience, education, and more.
+- **Export Options**: Export your CV in a structured format for various use cases.
+
+## Live Demo
+
+You can access the live version here: [Europass Maker Offline](https://kostassliazas.github.io/Europass-Maker-Offline/)
+
+---
+
+## Installation
+
+If you'd like to run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kostassliazas/Europass-Maker-Offline.git
+
+2. Navigate to the project directory:
+   ```bash
+    cd Europass-Maker-Offline
+
+    Open the index.html file in your browser to use the application.
+
+No additional installation is required, as this is a static web application.
+
+Exporting Your CV
+
+    Fill out all the relevant sections in the form.
+    Preview your CV to ensure it matches your preferences.
+    Click the Export button to download the Europass-formatted CV.
+
+## Contributing
+
+Contributions are welcome! If you’d like to improve the project, feel free to:
+
+    Fork the repository.
+    Create a feature branch:
+
+git checkout -b feature-name
+
+Commit your changes:
+
+    git commit -m "Describe your changes"
+
+    Push to your forked repository and create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
