@@ -37,9 +37,6 @@ No additional installation is required, as this is a static web application.
 2. Preview your CV to ensure it matches your preferences.
 3. Click the Export button to download the Europass-formatted CV.      
 
-## Contributing
-Contributions are welcome! If you’d like to improve the project
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
