@@ -163,17 +163,18 @@
         width: 324px;
         text-align: right;
         padding: 0 24px;
-        min-block-size: 24px;
       }
-
       .righ {
         float: right;
         letter-spacing: 1px;
         width: 576px;
         margin-right: 12px;
-        min-block-size: 24px;
       }
-
+      .righ:empty,.left:empty {
+        min-block-size: 24px;
+        min-width: 48px;
+        background: #eee;
+      }
       #main {
         margin: 24px auto;
         padding-bottom: 1px;
