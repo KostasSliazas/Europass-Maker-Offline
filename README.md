@@ -31,11 +31,11 @@ If you'd like to run this project locally, follow these steps:
 
 No additional installation is required, as this is a static web application.
 
-Exporting Your CV
+## Exporting Your CV
 
-    Fill out all the relevant sections in the form.
-    Preview your CV to ensure it matches your preferences.
-    Click the Export button to download the Europass-formatted CV.
+1. Fill out all the relevant sections in the form.
+2. Preview your CV to ensure it matches your preferences.
+3. Click the Export button to download the Europass-formatted CV.      
 
 ## Contributing
 
