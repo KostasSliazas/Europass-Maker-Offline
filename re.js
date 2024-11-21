@@ -275,7 +275,7 @@
     htmlString = `<!DOCTYPE html>\n${htmlString}`;
 
     // Trigger file download
-    download(ceds + date, htmlString);
+    download(date + '_'+ ceds, htmlString);
 
     // Call all extraction functions
     extractBasics();
@@ -284,7 +284,7 @@
     extractSkills();
     extractLanguages();
     extractPersonalSkills();
-    exportToJson(jsonData, ceds + date + '.json');
+    exportToJson(jsonData, date + '_'+ ceds + '.json');
   }
 
   let ef;
