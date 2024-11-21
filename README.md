@@ -38,20 +38,7 @@ No additional installation is required, as this is a static web application.
 3. Click the Export button to download the Europass-formatted CV.      
 
 ## Contributing
-
-Contributions are welcome! If you’d like to improve the project, feel free to:
-
-   Fork the repository.
-   Create a feature branch:   
-   ```bash
-    git checkout -b feature-name
-   ```
-Commit your changes:
-   ```bash
-    git commit -m "Describe your changes"
-   ```
-
-   Push to your forked repository and create a pull request.
+Contributions are welcome! If you’d like to improve the project
 
 ## License
 
