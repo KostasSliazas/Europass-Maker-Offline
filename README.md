@@ -27,7 +27,7 @@ If you'd like to run this project locally, follow these steps:
    ```bash
     cd Europass-Maker-Offline
 
-    Open the index.html file in your browser to use the application.
+3. Open the index.html file in your browser to use the application.
 
 No additional installation is required, as this is a static web application.
 
