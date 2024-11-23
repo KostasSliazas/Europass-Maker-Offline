@@ -115,7 +115,7 @@
   });
   infocDiv.appendChild(spanElement);
 
-  const infoTextContent = `Please do not close this window until your work is saved, as no information is stored in the database. To save your text, simply press 'Enter'. You can change language levels by double-clicking with the mouse. For the best experience, please ensure your photo is sized at 120x120 pixels. To optimize loading times, reduce the file size of your photo as much as possible. You can rearrange blocks by dragging them.`;
+  const infoTextContent = `Please do not close this window until your work is saved, as no information is stored in the database. To save your text, simply press 'Enter'. You can change language levels by double-clicking with the mouse. For the best experience, please ensure your photo is sized at 100x128 pixels. To optimize loading times, reduce the file size of your photo as much as possible. You can rearrange blocks by dragging them.`;
   const infoTextDiv = createHTMLElement('div', infoTextContent, {
     id: 'info-text'
   });
@@ -194,7 +194,8 @@
     const link = document.createElement('a');
     link.href = href;
     link.textContent = input.value; // Set link text to input value
-
+    link.target = "_blank"; // Open link in a new tab
+    link.rel = "noopener noreferrer nofollow"; // Add safe and nofollow attributes
     return link; // Return the <a> tag without any class
   };
 
@@ -203,7 +204,7 @@
     const heading = document.createElement(tagName);
     if (input.className) heading.setAttribute('class', input.className); // Preserve class on the heading
     if (input.id) heading.setAttribute('id', input.id); // Preserve id on the heading
-    if (input.value) heading.textContent = input.value; // Set text content from input value
+    if (input.value) heading.textContent = input.value.trim(); // Set text content from input value
     input.parentNode.replaceChild(heading, input); // Replace the input with the heading
     return heading; // Return the newly created heading
   }
@@ -430,7 +431,7 @@ function uploadProgress(e) {
     const phone = document?.getElementById('number')?.getElementsByTagName('a')[0]?.textContent.replace(/\s+/g, '') || null;
     const address = document?.getElementById('address')?.textContent.trim() || null;
     const image = document?.getElementById('preview')?.src || null;
-    const url = document?.getElementById('url').getElementsByTagName('a')[0]?.textContent.replace(/\s+/g, '') || null;
+    const url = document?.getElementById('url').getElementsByTagName('a')[0]?.href.trim() || null;
     const postalCode = document?.getElementById('postal-code')?.textContent.trim() || null;
     const city = document?.getElementById('city')?.textContent.trim() || null;
     const countryCode = document?.getElementById('country-code')?.textContent.trim() || null;
@@ -542,7 +543,7 @@ function uploadProgress(e) {
     const vardasNode = document.getElementById('name').textContent;
     // if test pass only letters use safely make name of file as person name
     if (containsOnlyLetters(vardasNode) && vardasNode) {
-      ceds = vardasNode?.replace(/\s/g, '-') + '(CV)'; //(-) can be a good choice for file names words seperations + add (CV)
+      ceds = vardasNode?.replace(/\s/g, '-') + '-CV'; //(-) can be a good choice for file names words seperations + add (CV)
     }
     const date = generateDate();
     // Remove elements using pure JavaScript
@@ -550,17 +551,6 @@ function uploadProgress(e) {
       element.parentNode.removeChild(element);
     });
     document.querySelectorAll('[draggable="true"]').forEach(e => e.removeAttribute("draggable"));
-    // Remove all script elements
-    document.querySelectorAll('script').forEach(function (script) {
-      script.parentNode.removeChild(script);
-    });
-
-    // Remove the last link element
-    const links = document.querySelectorAll('link');
-    if (links.length > 0) {
-      const lastLink = links[links.length - 1];
-      lastLink.parentNode.removeChild(lastLink);
-    }
 
     // Clone the HTML content
     const htmlElement = document.querySelector('html');
@@ -573,7 +563,7 @@ function uploadProgress(e) {
     htmlString = `<!DOCTYPE html>\n${htmlString}`;
 
     // Trigger file download
-    download(date + '_' + ceds, htmlString);
+    download(ceds + '-' + date, htmlString);
 
     // Call all extraction functions
     // extractSkills();
@@ -582,7 +572,7 @@ function uploadProgress(e) {
     extractBasics();
     extractWorkExperience();
     extractEducation();
-    exportToJson(jsonData, date + '_' + ceds + '.json');
+    exportToJson(jsonData, ceds + '-' + date + '.json');
   }
 
   function download(fileName, html) {
