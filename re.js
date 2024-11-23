@@ -600,9 +600,9 @@ function uploadProgress(e) {
     pom.target = '_blank';
     if (document.createEvent) {
       // Create a new click event
-      const event = new Event('click', {
-        bubbles: true,
-        cancelable: true
+      const event = new MouseEvent('click', {
+        bubbles: true, // Indicates that the event can bubble up through the DOM tree
+        cancelable: true // Indicates that the event can be canceled
       });
       pom.dispatchEvent(event);
     } else {
@@ -643,7 +643,7 @@ function uploadProgress(e) {
   document.addEventListener('keyup', function (e) {
     if (e.key === 'Enter') {
       outf();
-      localStorage.setItem(document.getElementById('name').textContent.replace(/\s+/g, ""), JSON.stringify(jsonData));
+      // localStorage.setItem(document.getElementById('name').textContent.replace(/\s+/g, ""), JSON.stringify(jsonData));
     }
   });
 
