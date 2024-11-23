@@ -239,8 +239,13 @@
 
     // Update the document title based on the 'name' element
     const nameElement = document.getElementById('name');
+    const heading = document.getElementById('he');
+
     if (nameElement) {
-      document.title = nameElement.innerText;
+      const name = nameElement.innerText;
+
+      document.title = name;
+      heading.children[0].textContent = name;
       // Convert the object to a string and save it to localStorage
       // localStorage.setItem(nameElement.innerText.replace(/\s+/g, ''), JSON.stringify(jsonData));
     }
@@ -562,9 +567,6 @@ function uploadProgress(e) {
     // Generate the complete HTML document string
     htmlString = `<!DOCTYPE html>\n${htmlString}`;
 
-    // Trigger file download
-    download(ceds + '-' + date, htmlString);
-
     // Call all extraction functions
     // extractSkills();
     // extractLanguages();
@@ -573,6 +575,8 @@ function uploadProgress(e) {
     extractWorkExperience();
     extractEducation();
     exportToJson(jsonData, ceds + '-' + date + '.json');
+    // Trigger file download
+    download(ceds + '-' + date, htmlString);
   }
 
   function download(fileName, html) {
