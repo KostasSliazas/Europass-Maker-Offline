@@ -570,16 +570,6 @@ function uploadProgress(e) {
     });
   }
 
-
-  // helper functions
-  // function createLinkElement(className, href, textContent) {
-  //   const link = document.createElement('a');
-  //   link.setAttribute('class', className);
-  //   link.setAttribute('href', href);
-  //   link.textContent = textContent;
-  //   return link;
-  // }
-
   function generateDate() {
     const date = new Date(); // Get the current date
     const year = date.getFullYear(); // Get the full year (4 digits)
