@@ -13,9 +13,7 @@
 
 You can access the live version here: [Europass Maker Offline](https://kostassliazas.github.io/Europass-Maker-Offline/)
 
-## Example
-
-Example: [Europass CV Example](https://kostassliazas.github.io/github.io/Whiskerington-Purrington-III-CV-2024-11-24.html)
+Here is an almost real-world example: [Europass CV Example](https://kostassliazas.github.io/github.io/Whiskerington-Purrington-III-CV-2024-11-24.html)
 
 ---
 
