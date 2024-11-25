@@ -2,12 +2,12 @@
 .langue {
     cursor: pointer
 }
-
-.left:empty,
-.righ:empty {
+.left :empty,
+.righ :empty {
     min-block-size: 24px;
     min-width: 48px;
-    background: #eee
+    background: #eee;
+    display: block;
 }
 
 #upload_form {
