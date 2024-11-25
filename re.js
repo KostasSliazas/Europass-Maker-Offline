@@ -429,11 +429,7 @@ function uploadProgress(e) {
       "countryCode": "US",
       "region": "California"
     },
-    "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "https://twitter.com/john"
-    }]
+    "profiles": []
   },
   "work": [],
   "volunteer": [{
