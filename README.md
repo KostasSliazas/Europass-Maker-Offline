@@ -30,7 +30,9 @@ If you'd like to run this project locally, follow these steps:
     cd Europass-Maker-Offline
 
 3. Open the index.html file in your browser to use the application.
-
+   ```bash
+   firefox index.html
+   
 No additional installation is required, as this is a static web application.
 
 ## Exporting Your CV
