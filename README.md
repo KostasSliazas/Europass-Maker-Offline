@@ -29,7 +29,7 @@ If you'd like to run this project locally, follow these steps:
    ```bash
     cd Europass-Maker-Offline
 
-3. Open the index.html file in your browser to use the application.
+3. Open the index.html file in your browser to use the application. For example:
    ```bash
    firefox index.html
    
