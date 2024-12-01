@@ -644,9 +644,10 @@ function uploadProgress(e) {
                       class: 'left',
                     })
                   );
+
                   dateSection.appendChild(
                     createHTMLElement('h3', date, {
-                      class: 'right',
+                      class: 'righ',
                     })
                   );
                   inner.appendChild(dateSection);
