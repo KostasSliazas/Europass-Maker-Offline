@@ -1,6 +1,6 @@
 # Europass Maker Offline
 
-**Europass Maker Offline** is a web application designed to help users create Europass CVs efficiently and offline. This tool provides a user-friendly interface to format, organize, and export resumes in line with Europass standards.
+**Europass Maker Offline** designed to help users create Europass CVs efficiently and offline. This tool provides a user-friendly interface to format, organize, and export resumes in line with Europass standards.
 
 ## Features
 
