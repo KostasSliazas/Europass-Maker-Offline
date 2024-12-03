@@ -1,4 +1,5 @@
 /*jshint esversion: 11 */
+/* ECMASCRIPT_2020 */
 (function (document) {
   'use strict';
   /**
@@ -727,7 +728,7 @@ function uploadProgress(e) {
     const loopObjectOrArray = (value, parentKey) => {
       // Create a container for nested structures
 
-      const inner = createHTMLElement('div');
+      const inner = createHTMLElement('div', '', { class: key });
 
       if (Array.isArray(value)) {
         // Handle arrays
@@ -1082,11 +1083,10 @@ function uploadProgress(e) {
    * Extracts work experience data from the document and populates the `jsonData.work` array.
    */
   function extractWorkExperience() {
-    const workElements = [...document.getElementsByClassName('experience')];
+    const workElements = [...document.getElementsByClassName('work')];
 
     workElements.forEach(work => {
       let workExperience = {};
-
       const dateStart = work?.getElementsByTagName('h3')[0]?.textContent.trim() || null;
       const dateEnd = work?.getElementsByTagName('h3')[1]?.textContent.trim() || null;
       const position = work?.getElementsByTagName('h3')[2]?.textContent.trim() || null;
@@ -1118,7 +1118,6 @@ function uploadProgress(e) {
 
     educationSections.forEach(eduSection => {
       let education = {};
-
       const dateStart = eduSection?.getElementsByTagName('h3')[0]?.textContent.trim() || null;
       const dateEnd = eduSection?.getElementsByTagName('h3')[1]?.textContent.trim() || null;
       const studyType = eduSection?.getElementsByTagName('h3')[2]?.textContent.trim() || null;
@@ -1203,16 +1202,6 @@ function uploadProgress(e) {
   }
 
   /**
-   * Checks if a string contains only alphabetic characters and spaces.
-   *
-   * @param {string} str - The string to check.
-   * @returns {boolean} True if the string contains only letters and spaces, false otherwise.
-   */
-  function containsOnlyLetters(str) {
-    return /^[a-zA-Z\s]+$/.test(str);
-  }
-
-  /**
    * Matches and converts a date string in the format YYYY-MM-DD or YYYY-MM to the standard date format (YYYY-MM-DD).
    *
    * @param {string} dateString - The date string to be matched and converted.
@@ -1235,21 +1224,53 @@ function uploadProgress(e) {
   }
 
   /**
+   * Checks if the given string contains only letters and spaces, and removes any accents or diacritical marks.
+   * If the string is valid (after removing accents), it returns the string with spaces replaced by hyphens and appends '-CV'.
+   * If the string contains any invalid characters, returns `null`.
+   *
+   * @param {string} str - The string to check and process.
+   * @returns {string|null} The transformed string with spaces replaced by hyphens and '-CV' appended, or `null` if the input is invalid.
+   */
+  function containsOnlyLetters(str) {
+    const normalizedStr = removeAccents(str); // Remove accents from the input string
+    if (/^[a-zA-Z\s]+$/.test(normalizedStr)) {
+      // Check if the string contains only English letters and spaces
+      return normalizedStr?.replace(/\s/g, '-') + '-CV'; // Replace spaces with hyphens and append '-CV'
+    } else {
+      return null; // Return null if the string contains invalid characters
+    }
+  }
+
+  /**
+   * Removes accents and diacritical marks from the given string.
+   * This function normalizes the string to a decomposed form and removes any diacritical marks.
+   *
+   * @param {string} str - The string from which accents will be removed.
+   * @returns {string} The string without accents or diacritical marks.
+   */
+  function removeAccents(str) {
+    return str
+      .normalize('NFD') // Normalize the string to decomposed form
+      .replace(/[\u0300-\u036f]/g, ''); // Remove all diacritical marks
+  }
+
+  /**
    * Generates and downloads an HTML and JSON file based on user data.
+   * This function:
    * - Sets a default file name or generates one based on user input.
-   * - Cleans up unnecessary HTML elements.
-   * - Exports relevant data in both HTML and JSON formats.
+   * - Cleans up unnecessary HTML elements (removes elements with the 'remove' class and disables draggable elements).
+   * - Extracts relevant data from the page (languages, skills, basics, work experience, and education).
+   * - Exports the data in both HTML and JSON formats.
+   *
+   * @function
+   * @returns {void} This function does not return any value. It triggers the download of an HTML file and a JSON file.
    */
   function htmls() {
     // Set default file name
-    let ceds = 'cv-europass';
-    const vardasNode = document.getElementById('name').textContent;
+    const nameElement = document.querySelector('#name');
+    const defaultTextNode = 'cv-europass';
 
-    // If name consists only of letters, use it as the file name
-    if (containsOnlyLetters(vardasNode) && vardasNode) {
-      ceds = vardasNode?.replace(/\s/g, '-') + '-CV'; // Replace spaces with hyphens and add '-CV'
-    }
-
+    const name = containsOnlyLetters(nameElement.textContent) || defaultTextNode;
     const date = generateDate();
 
     // Remove elements with the 'remove' class and draggable attribute
@@ -1274,11 +1295,11 @@ function uploadProgress(e) {
     extractWorkExperience();
     extractEducation();
 
-    // Export the data as JSON
-    exportToJson(jsonData, `${ceds}-${date}.json`);
-
     // Trigger the download of the HTML file
-    download(`${ceds}-${date}`, htmlString);
+    download(`${name}-${date}`, htmlString);
+
+    // Export the data as JSON
+    exportToJson(jsonData, `${name}-${date}.json`);
   }
 
   /**
