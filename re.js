@@ -123,29 +123,53 @@
 
   // Initialize the body and select the first '.section' element
   const body = document.body;
-  const block = document.querySelectorAll('.section:first-child');
+
+  // create buton wraper div
+  const buttonsWrap = {
+    class: 'fixe remove r',
+    href: '#',
+  };
+
+  // Create div for buttons place
+  const wraper = createHTMLElement('div', '', buttonsWrap);
+  body.prepend(wraper);
+
+  // Create default class for buttons
+  const classButtons = 'save border-solid shd';
 
   // Button configuration for 'close' button in blocks
   const button = {
-    class: 'shd border-solid w24 remove',
+    class: classButtons,
     href: '#',
     id: 'close',
   };
 
   // Prepend 'close' button to the first block
-  block.forEach(e => e.before(createHTMLElement('button', 'i', button)));
+  const infoButton = createHTMLElement('button', 'about', button);
+  wraper.appendChild(infoButton);
 
   // Create and configure the 'Save CV' button
-  const saveCV = 'Save CV...';
+  const saveCV = 'Save HTML';
   const buttonSave = {
-    class: 'save fixe border-solid shd remove',
+    class: classButtons,
+    href: '#',
+  };
+  // Create 'Save CV' button and append to the body
+  const elms = createHTMLElement('button', saveCV, buttonSave);
+  wraper.appendChild(elms);
+  elms.onclick = html; // Attach click event for saving
+
+    // Create and configure the 'Save JSON' button
+  const saveJSON = 'Save JSON';
+  const buttonJSON = {
+    class: classButtons,
     href: '#',
   };
 
   // Create 'Save CV' button and append to the body
-  const elms = createHTMLElement('button', saveCV, buttonSave);
-  body.appendChild(elms);
-  elms.onclick = html; // Attach click event for saving
+  const jsonButton = createHTMLElement('button', saveJSON, buttonJSON);
+  wraper.appendChild(jsonButton);
+  jsonButton.onclick = json; // Attach click event for saving
 
   // Create 'info' div and its children for additional information display
   const infoDiv = createHTMLElement('div', '', {
@@ -164,11 +188,10 @@
   const infoTextDiv = createHTMLElement('div', infoTextContent, {
     id: 'info-text',
   });
-
   // Append the info content to the infoDiv and insert at the beginning of the body
   infoDiv.appendChild(infoContent);
   infoDiv.appendChild(infoTextDiv);
-  document.body.insertBefore(infoDiv, document.body.firstChild);
+  body.insertBefore(infoDiv, body.firstChild);
 
   // Add 'minus' and 'plus' buttons to other blocks for manipulation
   const elem = document.querySelectorAll('.section');
@@ -204,7 +227,7 @@
   // Create and configure the 'Import JSON' button
   const importButtonText = 'Import JSON';
   const importButtonConfig = {
-    class: 'import fixe border-solid shd remove',
+    class: 'import border-solid shd remove',
     id: 'importButton',
   };
 
@@ -222,8 +245,8 @@
   const fileJSONInput = createHTMLElement('input', '', fileInputConfig);
 
   // Append both the import button and file input to the body
-  document.body.appendChild(importButton);
-  document.body.appendChild(fileJSONInput);
+  wraper.appendChild(importButton);
+  body.appendChild(fileJSONInput);
 
   // HTML structure for the upload form with several hidden fields and progress info
   const uploadFormHtml = `
@@ -1296,11 +1319,17 @@ function uploadProgress(e) {
 
     // Trigger the download of the HTML file
     download(`${name}-${date}`, htmlString);
+  }
 
+  function json(){
+    // Set default file name
+    const nameElement = document.querySelector('#name');
+    const defaultTextNode = 'cv-json-';
+    const name = containsOnlyLetters(nameElement.textContent) || defaultTextNode;
+    const date = generateDate();
     // Export the data as JSON
     exportToJson(jsonData, `${name}-${date}.json`);
   }
-
   /**
    * Triggers the download of an HTML file.
    *
@@ -1310,7 +1339,7 @@ function uploadProgress(e) {
   function download(fileName, html) {
     const pom = document.createElement('a');
     document.body.appendChild(pom);
-    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(html));
+    pom.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
     pom.setAttribute('download', `${fileName}.html`);
     pom.target = '_blank';
 
@@ -1322,6 +1351,7 @@ function uploadProgress(e) {
       pom.dispatchEvent(event);
     } else {
       pom.click();
+      pom.remove();
     }
   }
 
@@ -1339,6 +1369,7 @@ function uploadProgress(e) {
     link.download = fileName;
 
     link.click();
+    link.remove();
     URL.revokeObjectURL(link.href);
   }
 
