@@ -1,7 +1,7 @@
 .langue {
     cursor: pointer
 }
-h2 {background: #aaa}
+h2 {background: #777 !important}
 .left :empty,.right :empty {
     min-block-size: 24px;
     min-width: 48px;
