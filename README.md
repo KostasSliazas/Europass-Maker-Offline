@@ -9,7 +9,7 @@
 - **Customizable Fields**: Easily update personal information, work experience, education, and more.
 - **Export Options**: Export your CV in a structured format for various use cases.
 
-## Live Demo
+## Live example
 
 You can access the live version here: [Europass Maker Offline](https://kostassliazas.github.io/Europass-Maker-Offline/)
 
