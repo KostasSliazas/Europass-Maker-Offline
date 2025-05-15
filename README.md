@@ -1,4 +1,9 @@
 # Europass Maker Offline
+[![License](https://img.shields.io/github/license/KostasSliazas/Europass-Maker-Offline)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/KostasSliazas/Europass-Maker-Offline?style=social)](https://github.com/KostasSliazas/Europass-Maker-Offline/stargazers)
+[![Forks](https://img.shields.io/github/forks/KostasSliazas/Europass-Maker-Offline?style=social)](https://github.com/KostasSliazas/Europass-Maker-Offline/forks)
+[![Issues](https://img.shields.io/github/issues/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/commits)
 
 **Europass Maker Offline** designed to help users create Europass CVs efficiently and offline. This tool provides a user-friendly interface to format, organize, and export resumes in line with Europass standards.
 
