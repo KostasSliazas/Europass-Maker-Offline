@@ -39,7 +39,7 @@ No additional installation is required, as this is a static web application.
 
 ## Exporting Your CV
 
-1. Fill out all the relevant sections in the form.
+1. Fill out all the relevant sections in the form.(Do not refresh page)
 2. Preview your CV to ensure it matches your preferences.
 3. Click the Export button to download the Europass-formatted CV.      
 
