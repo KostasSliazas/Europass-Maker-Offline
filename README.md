@@ -11,7 +11,7 @@
 - **Offline Functionality**: Works entirely offline—no internet connection required.
 - **User-Friendly Interface**: Intuitive design for creating professional Europass CVs.
 - **Customizable Fields**: Easily update personal information, work experience, education, and more.
-- **Export Options**: Export your CV in a structured format for various use cases.
+- **Export Options**: Export your CV in a structured format for various use cases.{JSON,HTML,PDF}
 
 ## Live example
 
