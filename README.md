@@ -5,12 +5,6 @@
 [![Issues](https://img.shields.io/github/issues/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/commits)
 
-**Europass Maker Offline** designed to help users create Europass CVs efficiently and offline.
-## Features
-
-- **Offline Functionality**: Works entirely offline—no internet connection required.
-- **User-Friendly Interface**: Intuitive design for creating professional Europass CVs.
-- **Customizable Fields**: Easily update personal information, work experience, education, and more.
 - **Export Options**: Export your CV in a structured format for various use cases.{JSON,HTML,PDF}
 
 ## Live example
