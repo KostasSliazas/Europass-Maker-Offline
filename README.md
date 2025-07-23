@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/commits)
 
-- **Export Options**: Export your CV in a structured format for various use cases.(JSON,HTML,PDF)
+- **Export Options**: Export your CV in a structured format for various use cases(JSON,HTML,PDF). Add custom sections (both sides are editable).
 
 ## Live example
 
