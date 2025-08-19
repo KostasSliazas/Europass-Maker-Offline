@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/Europass-Maker-Offline)](https://github.com/KostasSliazas/Europass-Maker-Offline/commits)
 
-- **Export Options**: Export your CV in a structured format for various use cases(JSON,HTML,PDF). Add custom sections (both sides are editable).
+- **Export Options**: Export your CV in a structured format for various use cases(JSON,HTML,PDF). Add custom sections (both sides are editable).This project can be found in my project-kitten
 
 ## Live example
 
@@ -24,7 +24,7 @@ If you'd like to run this project locally, follow these steps:
 2. Navigate to the project directory:
    ```bash
    cd Europass-Maker-Offline
-
+i
 3. Open the index.html file in your browser to use the application. For example:
    ```bash
    firefox index.html
